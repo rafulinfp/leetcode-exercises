@@ -1,4 +1,5 @@
 ﻿using System;
+using LeetCodeProblems.Algorithms;
 using LeetCodeProblems.Problems;
 
 namespace LeetCodeProblems
@@ -15,6 +16,12 @@ namespace LeetCodeProblems
 
                 switch (problem)
                 {
+                    case "merge-sort":
+                        {
+                            var array = new int[] { 12, 233, 23, 343, 45, 52, 6, 81, 92, 8, 96, 34, 2, 3, 5, 28, 323 };
+                            Console.WriteLine($"Merge Sort Result: {String.Join(",", MergeSortAlgorith.MergeSort(array))}");
+                        }
+                        break;
                     case "1":
                         {
                             var nums = new int[] { 2, 7, 11, 15 };
